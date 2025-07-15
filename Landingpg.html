@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV. Bali Surya Grup | Sewa Excavator & Dump Truk</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #FFFAF0, #FFF6E5);
+    }
+
+    h1 {
+      text-shadow: 1px 1px 4px rgba(255, 193, 7, 0.7);
+    }
+
+    img {
+      border: 5px solid #FFD54F;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);
+    }
+
+    a:hover {
+      box-shadow: 0 6px 20px rgba(255, 193, 7, 0.8);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <section
+    class="min-h-screen flex flex-col items-center justify-center text-center p-6"
+  >
+    <h1 class="text-4xl font-bold text-yellow-600 mb-4">CV. Bali Surya Grup </h1>
+    <p class="text-xl mb-6">
+      Layanan Sewa Excavator & Dump Truk 10m³<br />
+      Profesional, Terpercaya, dan Cepat Tanggap!
+    </p>
+
+    <img
+      src="Exca2025.jpg"
+      alt="CV. Bali Surya Grup"
+      class="rounded shadow-md mb-6 w-full max-w-md"
+    />
+
+    <a
+      href="https://wa.me/628124634366"
+      target="_blank"
+      class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-full text-lg shadow-lg transition duration-300"
+      >Hubungi Kami via WhatsApp</a
+    >
+
+    <div class="mt-10 text-sm text-gray-500">
+      <p>&copy; 2025 CV. Bali Surya Grup. All rights reserved.</p>
+    </div>
+  </section>
+
+  <script>
+    // Efek klik tombol WhatsApp
+    const waButton = document.querySelector('a[href^="https://wa.me"]');
+
+    waButton.addEventListener('click', () => {
+      alert(
+        'Terima kasih sudah menghubungi CV. Bali Surya Grup! Kami akan segera merespons.'
+      );
+    });
+
+    // Contoh smooth scroll jika ada anchor link (belum ada di sekarang)
+    // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    //   anchor.addEventListener('click', function(e) {
+    //     e.preventDefault();
+    //     document.querySelector(this.getAttribute('href')).scrollIntoView({
+    //       behavior: 'smooth'
+    //     });
+    //   });
+    // });
+  </script>
+</body>
+</html>
